@@ -1,0 +1,965 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 150px) and (max-width: 670px) {
+  #alerts {
+    top: 30%;
+  }
+  .all-content {
+    flex-direction: column;
+  }
+  .all-content .left {
+    margin-top: 40px;
+  }
+  .all-content .left .formato {
+    font-size: 8px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte1 img {
+    width: 100px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte3 {
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte1 {
+    width: 150px;
+    height: 80%;
+    justify-content: space-between;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte2 {
+    width: 80%;
+    height: 80%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte2 #title__remitente {
+    font-size: 8px;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte3 {
+    height: 80%;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte1 {
+    width: 100px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 {
+    padding-left: 3px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 input {
+    font-size: 8px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #nombres {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #documento {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #servicios {
+    font-size: 7px;
+    width: 100%;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte1 input {
+    font-size: 8px;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte2 .bloque4__parte2__img-resultado img {
+    width: 100px;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte3 .bloque4__parte3__firma img {
+    width: 100px;
+  }
+  .all-content .right {
+    font-size: 12px;
+    margin-top: 50px;
+  }
+  .all-content .right .ilustracion {
+    display: none;
+  }
+  .all-content .right .right__options {
+    padding: 20px 0 20px 0;
+  }
+  .all-content .right .right__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-content .right .right__btns button {
+    margin-bottom: 10px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 670px) and (max-width: 768px) {
+  #alerts {
+    top: 50%;
+  }
+  .all-content {
+    flex-direction: column;
+  }
+  .all-content .left {
+    margin-top: 40px;
+  }
+  .all-content .left .formato {
+    font-size: 10px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte1 img {
+    width: 100px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte2 {
+    padding-left: 20px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte3 {
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte1 {
+    width: 150px;
+    height: 80%;
+    justify-content: space-between;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte2 {
+    height: 80%;
+    justify-content: space-between;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte3 {
+    height: 80%;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte1 {
+    width: 100px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 {
+    padding-left: 3px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 input {
+    font-size: 10px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #nombres {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #documento {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #servicios {
+    font-size: 9px;
+    width: 100%;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte1 input {
+    font-size: 10px;
+  }
+  .all-content .right {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .all-content .right .ilustracion {
+    display: none;
+  }
+  .all-content .right .right__options {
+    padding: 20px 0 20px 0;
+  }
+  .all-content .right .right__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-content .right .right__btns button {
+    margin-bottom: 10px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1064px) {
+  #alerts {
+    top: 50%;
+  }
+  .all-content {
+    flex-direction: column;
+  }
+  .all-content .left {
+    margin-top: 20px;
+  }
+  .all-content .left .formato {
+    font-size: 12px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte1 img {
+    width: 150px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte2 {
+    padding-left: 20px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte3 {
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte1 {
+    width: 180px;
+    height: 80%;
+    justify-content: space-between;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte2 {
+    width: 260px;
+    height: 80%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte3 {
+    height: 80%;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte1 {
+    width: 150px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 {
+    padding-left: 3px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 input {
+    font-size: 13px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #nombres {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #documento {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #servicios {
+    font-size: 10px;
+    width: 100%;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte1 input {
+    font-size: 12px;
+  }
+  .all-content .right {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .all-content .right .ilustracion {
+    display: none;
+  }
+  .all-content .right .right__options {
+    padding: 20px 0 20px 0;
+  }
+  .all-content .right .right__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-content .right .right__btns button {
+    margin-bottom: 10px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1064px) and (max-width: 1600px) {
+  .all-content {
+    flex-direction: row;
+  }
+  .all-content .left .formato {
+    font-size: 12px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte1 img {
+    width: 150px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte2 {
+    padding-left: 20px;
+  }
+  .all-content .left .formato .formato__bloque1 .bloque1__parte3 {
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte1 {
+    width: 180px;
+    height: 80%;
+    justify-content: space-between;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte2 {
+    height: 80%;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque2 .bloque2__parte3 {
+    height: 80%;
+    text-align: center;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte1 {
+    width: 150px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 {
+    padding-left: 3px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 input {
+    font-size: 13px;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #nombres {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #documento {
+    width: 90%;
+  }
+  .all-content .left .formato .formato__bloque3 .bloque3__parte2 #servicios {
+    font-size: 10px;
+    width: 100%;
+  }
+  .all-content .left .formato .formato__bloque4 .bloque4__parte1 input {
+    font-size: 12px;
+  }
+  .all-content .right {
+    font-size: 15px;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .all-content .right .ilustracion {
+    display: block;
+    width: 70%;
+  }
+  .all-content .right .ilustracion img {
+    width: 100%;
+  }
+  .all-content .right .right__options {
+    padding: 20px 0 20px 0;
+    font-size: 15px;
+  }
+  .all-content .right .right__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-content .right .right__btns button {
+    margin-bottom: 10px;
+  }
+}
+#btn_autorizaciones {
+  display: none;
+}
+
+#format_cotizaciones {
+  display: none;
+}
+
+#spanTitle_format_cotizaciones {
+  display: none;
+}
+
+#img__ilustracion_cotizaciones {
+  display: none;
+}
+
+#selectServis,
+#selectCant {
+  font-size: 12px;
+}
+
+.padre .all-content .left__formatoNoContratados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #212f3d;
+  position: relative;
+  width: 100%;
+}
+.padre .all-content .left__formatoNoContratados .img__superSalud {
+  position: relative;
+  text-align: end;
+}
+.padre .all-content .left__formatoNoContratados::before {
+  content: "";
+  background-image: url("/img/fondoLogo.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 8px;
+  border: 2px solid #212f3d;
+  position: relative;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 {
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+  margin-top: 10px;
+  border: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__logo {
+  border-right: 1px solid #212f3d;
+  width: 30%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__logo img {
+  width: 70%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__title {
+  font-weight: 700;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__cods {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #212f3d;
+  width: 30%;
+  height: 100%;
+  padding-left: 5px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__cods .cods__1,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte1 .content__parte1__cods .cods__2 {
+  border-bottom: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 90%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 {
+  width: 90%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__title {
+  background-color: #edbb99;
+  font-weight: 700;
+  border-bottom: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__data {
+  width: 50%;
+  text-align: start;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5px;
+  border-right: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__data .data__name {
+  border-bottom: 1px solid #212f3d;
+  padding-top: 8px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__insertData {
+  text-align: start;
+  width: 50%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__insertData input {
+  font-size: 10px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__insertData .insertData__name {
+  border-bottom: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte3 .content__parte3__tableInfoPaciente .tableInfoPaciente__infoInputs .infoInputs__insertData .insertData__ident {
+  display: flex;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .tableDescriptions__content__desc {
+  text-align: center;
+  font-size: 9px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content .selectServis__input {
+  width: 95%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content .selectServis__input #selectServis {
+  font-size: 8px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content #addServis {
+  font-size: 20px;
+  cursor: pointer;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content #addServis:hover {
+  color: #1ABC9C;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 {
+  width: 90%;
+  border: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content .tableDescriptions__content__encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edbb99;
+  font-weight: 700;
+  border-bottom: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content .tableDescriptions__content__encabezado .enca_cod {
+  height: 100%;
+  width: 90px;
+  border-right: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content .tableDescriptions__content__encabezado .enca_desc {
+  border-right: 1px solid #212f3d;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content .tableDescriptions__content__encabezado .enca_cant {
+  border-right: 1px solid #212f3d;
+  height: 100%;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content .tableDescriptions__content__encabezado .enca_valor {
+  height: 100%;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc input {
+  font-size: 9px;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos4 {
+  display: none;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis4 {
+  display: none;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #212f3d;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis2,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis3,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis4 {
+  display: block;
+  font-size: 15px;
+  cursor: pointer;
+  color: #F44336;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1 .content-cod_cums,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2 .content-cod_cums,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3 .content-cod_cums,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4 .content-cod_cums {
+  height: 45px;
+  width: 90px;
+  border-right: 1px solid #212f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1 .content-descriptions,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2 .content-descriptions,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3 .content-descriptions,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4 .content-descriptions {
+  height: 45px;
+  width: 400px;
+  border-right: 1px solid #212f3d;
+  text-align: start;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1 .content-cant,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2 .content-cant,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3 .content-cant,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4 .content-cant {
+  height: 45px;
+  width: 90px;
+  border-right: 1px solid #212f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1 .content-valor,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2 .content-valor,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3 .content-valor,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4 .content-valor {
+  height: 45px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__valorTotal {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__valorTotal .miValorTotal {
+  width: 580px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__valorTotal #valorTotal {
+  height: 100%;
+  width: 90px;
+  border-left: 1px solid #212f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padre .all-content .left__formatoNoContratados .content__parte5 {
+  display: none;
+  width: 90%;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.padre .all-content .left__formatoNoContratados .content__parte6 {
+  width: 90%;
+}
+.padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc .parte6__firmas {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc .parte6__firmas img {
+  width: 90px;
+}
+.padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc .parte6__infoFooter {
+  display: flex;
+  flex-direction: column;
+  color: #212f3d;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 670px) and (max-width: 770px) {
+  .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content {
+    font-size: 10px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 770px) and (max-width: 1070px) {
+  .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content {
+    font-size: 11px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1070px) and (max-width: 1600px) {
+  .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content {
+    font-size: 11px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content {
+    font-size: 13px;
+  }
+  .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content .selectServis__input #selectServis {
+    font-size: 10px;
+  }
+}
+body {
+  background-color: #f8f9f9;
+  font-family: "Roboto", sans-serif;
+  color: #dc7633;
+}
+
+.modal-body {
+  text-align: center;
+}
+.modal-body #img-modal {
+  width: 50%;
+  height: 50%;
+}
+
+.padre {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.padre #alerts {
+  position: absolute;
+  z-index: 10;
+}
+.padre .all-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212f3d;
+  margin-top: 15px;
+  color: #dc7633;
+  height: 870px;
+  width: 90%;
+}
+.padre .all-content .left {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #212f3d;
+}
+.padre .all-content .left .formato__bloque1 {
+  color: #212f3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #abb2b9;
+  height: 120px;
+}
+.padre .all-content .left .formato__bloque1 .bloque1__parte1 {
+  padding-left: 20px;
+}
+.padre .all-content .left .formato__bloque1 .bloque1__parte2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 300px;
+}
+.padre .all-content .left .formato__bloque1 .bloque1__parte2 span {
+  font-weight: 700;
+}
+.padre .all-content .left .formato__bloque1 .bloque1__parte3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+.padre .all-content .left .formato__bloque1 .bloque1__parte3 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque2 {
+  color: #212f3d;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #abb2b9;
+  height: 180px;
+}
+.padre .all-content .left .formato__bloque2 #remiteA {
+  padding-bottom: 6px;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte1 {
+  padding-left: 20px;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte1 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 {
+  align-items: center;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 .maxilodent {
+  font-size: 20px;
+  color: #1a939e;
+  font-weight: 700;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 .radiologia {
+  font-size: 20px;
+  color: #e67e22;
+  font-weight: 700;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 .castulo {
+  font-size: 20px;
+  color: #16a085;
+  font-weight: 700;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 #title__coosalud {
+  color: #75b948;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte2,
+.padre .all-content .left .formato__bloque2 .bloque2__parte1,
+.padre .all-content .left .formato__bloque2 .bloque2__parte3 {
+  display: flex;
+  flex-direction: column;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  height: 170px;
+}
+.padre .all-content .left .formato__bloque2 .bloque2__parte3 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque3 {
+  color: #212f3d;
+  display: flex;
+}
+.padre .all-content .left .formato__bloque3 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 21%;
+  padding-left: 20px;
+  height: 200px;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 20px;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 .bloque3__parte2__input__documento {
+  display: flex;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 .bloque3__parte2__input__estudio {
+  margin-bottom: 10px;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 #nombres {
+  width: 90%;
+  margin: 20px 0 27px 0;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 #documento {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 #servicios {
+  width: 98%;
+}
+.padre .all-content .left .formato__bloque4 span {
+  font-weight: 500;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte1 {
+  color: #212f3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #abb2b9;
+  padding-left: 20px;
+  width: 100%;
+  height: 50px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte1 #copago {
+  width: 20%;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte1 .bloque4__parte1__copago {
+  display: flex;
+  align-items: center;
+  width: 83%;
+  padding-left: 20px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte2 {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #212f3d;
+  border-bottom: 2px solid #abb2b9;
+  height: 80px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte2 .bloque4__parte2__img-resultado {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte2 .bloque4__parte2__img-resultado img {
+  height: 70px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte3 {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #212f3d;
+  border-bottom: 2px solid #abb2b9;
+  height: 60px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte3 .bloque4__parte3__firma {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte4 {
+  color: #212f3d;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  height: 60px;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte4 .bloque4__parte4__quien-autoriza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.padre .all-content .right__print {
+  display: none;
+}
+.padre .all-content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  color: #212f3d;
+  font-weight: 500;
+}
+.padre .all-content .right input:checked {
+  background-color: #f9a826;
+}
+.padre .all-content .right .right__title_change_format {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.padre .all-content .right .right__title {
+  font-size: 3em;
+  font-weight: 700;
+  color: #212f3d;
+  margin-right: 20px;
+}
+.padre .all-content .right .right__title span {
+  color: #f9a826;
+}/*# sourceMappingURL=styles.css.map */

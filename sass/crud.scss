@@ -1,0 +1,76 @@
+@use "./partials/animateFondo";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+$font: "Poppins", sans-serif;
+
+body {
+  //background-color: aqua;
+  font-family: $font;
+}
+.container-fluid {
+  width: 70%;
+  font-size: 13px;
+  a {
+    font-size: 40px;
+  }
+
+  .btnActions {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: 600;
+    //margin-top: 100px;
+  }
+
+  .acciones {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+#content__login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#all_content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+}
+
+#content__img__login {
+  width: 100%;
+  text-align: center;
+}
+
+.content__form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  #form__login {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+  }
+}
+.bienvenido {
+  font-weight: 700;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #img__login {
+    width: 100%;
+  }
+  #btn_admin {
+    font-size: 15px;
+  }
+}

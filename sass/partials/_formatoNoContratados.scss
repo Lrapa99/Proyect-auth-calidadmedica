@@ -1,0 +1,460 @@
+//!Seccion Formato De Servicios No Contratados
+
+//variables
+
+$body-font: "Roboto", sans-serif;
+$main-color: #f8f9f9;
+$letra-black: #212f3d;
+$color-orange: #edbb99;
+$right-color: #d5dbdb;
+$left-color: #aed6f1;
+$color-maxilodent: #1a939e;
+$color-radiologia: #e67e22;
+$color-castulo: #16a085;
+$color-coosalud: #75b948;
+$color-ilustracion: #f9a826;
+$color-linea: #abb2b9;
+
+#btn_autorizaciones {
+  display: none;
+}
+
+#format_cotizaciones {
+  display: none;
+}
+
+#spanTitle_format_cotizaciones {
+  display: none;
+}
+#img__ilustracion_cotizaciones {
+  display: none;
+}
+#selectServis,
+#selectCant {
+  font-size: 12px;
+}
+.padre {
+  .all-content {
+    .left__formatoNoContratados {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //align-items: flex-end;
+      color: $letra-black;
+      position: relative;
+      width: 100%;
+      .img__superSalud {
+        position: relative;
+        text-align: end;
+      }
+      &::before {
+        content: "";
+        background-image: url("/img/fondoLogo.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+      }
+      .left__formatoNoContratados__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 8px;
+        border: 2px solid $letra-black;
+        position: relative;
+
+        .content__parte1 {
+          opacity: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          width: 95%;
+          margin-top: 10px;
+          border: 1px solid $letra-black;
+          //border-bottom: 2px solid $color-linea;
+          //background-color: $left-color;
+          .content__parte1__logo {
+            border-right: 1px solid $letra-black;
+            width: 30%;
+            img {
+              width: 70%;
+            }
+          }
+          .content__parte1__title {
+            font-weight: 700;
+          }
+
+          .content__parte1__cods {
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid $letra-black;
+            width: 30%;
+            height: 100%;
+            padding-left: 5px;
+            .cods__1,
+            .cods__2 {
+              border-bottom: 1px solid $letra-black;
+            }
+          }
+        }
+
+        .content__parte2 {
+          //background-color: $left-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+          width: 90%;
+          //border-bottom: 2px solid $color-linea;
+        }
+
+        .content__parte3 {
+          //background-color: $left-color;
+          width: 90%;
+          .content__parte3__tableInfoPaciente {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid $letra-black;
+            .tableInfoPaciente__title {
+              background-color: $color-orange;
+              font-weight: 700;
+              border-bottom: 1px solid $letra-black;
+            }
+            .tableInfoPaciente__infoInputs {
+              display: flex;
+              font-weight: 700;
+              justify-content: space-between;
+              .infoInputs__data {
+                width: 50%;
+                text-align: start;
+                font-size: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 5px;
+                border-right: 1px solid $letra-black;
+                .data__name {
+                  border-bottom: 1px solid $letra-black;
+                  padding-top: 8px;
+                }
+              }
+              .infoInputs__insertData {
+                text-align: start;
+                width: 50%;
+
+                input {
+                  font-size: 10px;
+                }
+                .insertData__name {
+                  border-bottom: 1px solid $letra-black;
+                }
+                .insertData__ident {
+                  display: flex;
+                }
+              }
+            }
+          }
+        }
+
+        .tableDescriptions__content__desc {
+          text-align: center;
+          font-size: 9px;
+        }
+
+        .selectServis__content {
+          display: flex;
+          align-items: center;
+          width: 90%;
+
+          .selectServis__input {
+            width: 95%;
+            #selectServis {
+              font-size: 8px;
+            }
+          }
+
+          #addServis {
+            font-size: 20px;
+            cursor: pointer;
+            &:hover {
+              color: #1ABC9C;
+            }
+          }
+        }
+
+        .content__parte4 {
+          //background-color: $left-color;
+          width: 90%;
+          border: 1px solid $letra-black;
+
+          //text-align: center;
+          .content__parte4__tableDescriptions {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .tableDescriptions__content {
+              //height: 100px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .tableDescriptions__content__encabezado {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $color-orange;
+                font-weight: 700;
+                border-bottom: 1px solid $letra-black;
+
+                .enca_cod {
+                  height: 100%;
+                  width: 90px;
+                  border-right: 1px solid $letra-black;
+                }
+                .enca_desc {
+                  border-right: 1px solid $letra-black;
+                  height: 100%;
+                  width: 400px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .enca_cant {
+                  border-right: 1px solid $letra-black;
+                  height: 100%;
+                  width: 90px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .enca_valor {
+                  height: 100%;
+                  width: 90px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  //border-right: 1px solid $letra-black;
+                }
+              }
+            }
+
+            .tableDescriptions__content__desc {
+              //background-color: $left-color;
+              width: 100%;
+              height: 100%;
+              //border-bottom: 1px solid $letra-black;
+              font-size: 10px;
+              input {
+                font-size: 9px;
+              }
+
+              #inputCampos2,
+              #inputCampos3,
+              #inputCampos4 {
+                display: none;
+              }
+
+              .deleteServis,
+              .deleteServis2,
+              .deleteServis3,
+              .deleteServis4 {
+                display: none;
+              }
+
+              .inputCampos1,
+              .inputCampos2,
+              .inputCampos3,
+              .inputCampos4 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $letra-black;
+
+                &:hover {
+                  #deleteServis2,
+                  #deleteServis3,
+                  #deleteServis4 {
+                    display: block;
+                    font-size: 15px;
+                    cursor: pointer;
+                    color: #F44336;
+                  }
+                }
+
+                .content-cod_cums {
+                  height: 45px;
+                  width: 90px;
+                  border-right: 1px solid $letra-black;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                }
+                .content-descriptions {
+                  height: 45px;
+                  width: 400px;
+                  border-right: 1px solid $letra-black;
+                  //display: flex;
+                  text-align: start;
+                  display: flex;
+                  padding-left: 5px;
+                  align-items: center;
+                }
+                .content-cant {
+                  height: 45px;
+                  width: 90px;
+                  border-right: 1px solid $letra-black;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                .content-valor {
+                  height: 45px;
+                  width: 90px;
+                  //border-right: 1px solid $letra-black;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+            }
+
+            .tableDescriptions__valorTotal {
+              font-weight: 700;
+              display: flex;
+              justify-content: space-between;
+              // border-bottom: 2px solid $color-linea;
+              .miValorTotal {
+                width: 580px;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+              }
+
+              #valorTotal {
+                height: 100%;
+                width: 90px;
+                border-left: 1px solid $letra-black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+
+      .content__parte5 {
+        //background-color: $left-color;
+        display: none;
+        width: 90%;
+        font-weight: 700;
+        margin-top: 5px;
+        //border-bottom: 2px solid $color-linea;
+      }
+
+      .content__parte6 {
+        //background-color: $left-color;
+        width: 90%;
+        .content__parte6__desc {
+          display: flex;
+          flex-direction: column;
+          //height: 200px;
+          justify-content: space-around;
+          .parte6__firmas {
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            //border-bottom: 2px solid $color-linea;
+            img {
+              width: 90px;
+            }
+          }
+          .parte6__infoFooter {
+            display: flex;
+            flex-direction: column;
+            color: $letra-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 670px) and (max-width: 770px) {
+  .padre {
+    .all-content {
+      .left__formatoNoContratados {
+        .left__formatoNoContratados__content {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 770px) and (max-width: 1070px) {
+  .padre {
+    .all-content {
+      .left__formatoNoContratados {
+        .left__formatoNoContratados__content {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1070px) and (max-width: 1600px) {
+  .padre {
+    .all-content {
+      .left__formatoNoContratados {
+        .left__formatoNoContratados__content {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  .padre {
+    .all-content {
+      .left__formatoNoContratados {
+        .left__formatoNoContratados__content {
+          font-size: 13px;
+
+          .selectServis__content {
+            .selectServis__input {
+              #selectServis {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

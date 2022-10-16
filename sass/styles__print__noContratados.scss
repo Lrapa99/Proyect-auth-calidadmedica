@@ -1,0 +1,133 @@
+@media print {
+  $letra-black: #212f3d;
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  .padre {
+    .all-content {
+      height: 93vh;
+      .left__formatoNoContratados {
+        height: 86vh;
+        &::before {
+          opacity: 1;
+          background-size: 100%;
+        }
+        .left__formatoNoContratados__content {
+          font-size: 12px;
+
+          .content__parte1 {
+            opacity: 1;
+            width: 95%;
+            margin-top: 10px;
+            border: 1px solid $letra-black;
+            .content__parte1__logo {
+              border-right: 1px solid $letra-black;
+              width: 30%;
+              img {
+                width: 70%;
+              }
+            }
+            .content__parte1__cods {
+              text-align: start;
+              border-left: 1px solid $letra-black;
+              width: 30%;
+              padding-left: 5px;
+              .cods__1,
+              .cods__2 {
+                border-bottom: 1px solid $letra-black;
+              }
+            }
+          }
+
+          .content__parte2 {
+            text-align: start;
+            //height: 250px;
+
+            .content__parte2__coosalud {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          .content__parte3 {
+            .content__parte3__tableInfoPaciente {
+              font-size: 11px;
+              .tableInfoPaciente__infoInputs {
+                input {
+                  border: none;
+                }
+                .infoInputs__data {
+                  font-size: 11px;
+                }
+                .infoInputs__insertData {
+                  text-align: start;
+                  width: 50%;
+                  input {
+                    font-size: 11px;
+                  }
+
+                  .insertData__ident {
+                    display: flex;
+                  }
+                }
+              }
+            }
+          }
+
+          .selectServis__content{
+            display: none;
+          }
+
+          .content__parte4 {
+            input {
+              border: none;
+              width: 40px;
+            }
+          }
+
+          .content__parte5 {
+            //background-color: $left-color;
+            display: block;
+            width: 90%;
+            .content__parte5_notaMedioDeContraste{
+              display: none;
+            }
+          }
+
+          .content__parte6 {
+            //background-color: $left-color;
+            width: 90%;
+            
+            .content__parte6__desc {
+              display: flex;
+              flex-direction: column;
+              //height: 250px;
+              justify-content: space-around;
+              .parte6__firmas {
+                font-weight: 700;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                  width: 90px;
+                }
+              }
+              .parte6__infoFooter {
+                display: flex;
+                font-size: 11px;
+                flex-direction: column;
+                color: $letra-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
