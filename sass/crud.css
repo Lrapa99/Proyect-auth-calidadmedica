@@ -169,6 +169,16 @@ body {
   justify-content: space-around;
 }
 
+.bnt__add__logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn_logout {
+  font-size: 20px;
+}
+
 #content__login {
   display: flex;
   align-items: center;
@@ -216,4 +226,11 @@ body {
 }
 .logo #btn_admin {
   font-size: 15px;
+}
+
+.alert {
+  display: none;
+  position: absolute;
+  top: 10em;
+  width: 20%;
 }/*# sourceMappingURL=crud.css.map */

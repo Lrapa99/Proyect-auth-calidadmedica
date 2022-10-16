@@ -1,3 +1,20 @@
+<?php 
+
+session_start();
+$rol = $_SESSION['rol'];
+
+if(!isset($rol)){
+
+    header('location: soyAdmin.php');
+}else{
+  if($rol != 1){
+    header('location: soyAdmin.php');
+  }
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +42,11 @@ include('connetion.php');
 $sql= 'SELECT * FROM servicios';
 $resul = mysqli_query($connetion, $sql);
 ?>
-<br><br><h1>Administrar Servicios</h1><br><br>
+<br><br><div class="bnt__add__logout">
+<h1>Administrar Servicios</h1>
+<a id="btn_logout" class="btn btn-secondary" href="logoutAdmin.php" role="button">Cerrar Sesion</a>
+</div><br><br>
 <a href="add.php" title="Agregar Servicio" class="btnAdd"><i class="fa-solid fa-circle-plus text-warning"></i></a><br><br>
-
 <table class="table table-hover table-bordered ">
 <thead class="table-primary">
 <tr>

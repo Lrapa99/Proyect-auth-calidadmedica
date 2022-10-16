@@ -1,8 +1,20 @@
+
 <?php 
-    include('connetion.php');
+   include('connetion.php');
+session_start();
+$rol = $_SESSION['rol'];
+
+if(!isset($rol)){
+
+    header('location: soyAdmin.php');
+}else{
+  if($rol != 1){
+    header('location: soyAdmin.php');
+  }
+}
+
 
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -46,6 +58,10 @@
         }else{
             //si no se ha presionado el boton actualizar
             $id=$_GET['id'];
+
+
+            if($id !== null){
+
             $sql="SELECT * FROM servicios WHERE id='".$id."'";
             $resul = mysqli_query($connetion, $sql);
 
@@ -90,7 +106,9 @@
 
     </form>
 <?php 
-        }
+  }else{
+       header('location: admin.php');
+    } }
 ?>
   </div>
 
@@ -98,3 +116,4 @@
     <script src="https://kit.fontawesome.com/6f4c79b44d.js" crossorigin="anonymous"></script>
   </body>
 </html>
+

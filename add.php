@@ -1,3 +1,19 @@
+<?php 
+
+session_start();
+$rol = $_SESSION['rol'];
+
+if(!isset($rol)){
+
+    header('location: soyAdmin.php');
+}else{
+  if($rol != 1){
+    header('location: soyAdmin.php');
+  }
+}
+
+
+?>
 <!doctype html>
 <html lang="en">
   <head>

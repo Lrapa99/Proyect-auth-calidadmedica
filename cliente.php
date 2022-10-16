@@ -1,3 +1,20 @@
+<?php 
+
+session_start();
+$rol = $_SESSION['rol'];
+
+if(!isset($rol)){
+
+    header('location: index.php');
+}else{
+  if($rol != 2){
+    header('location: index.php');
+  }
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -403,7 +420,9 @@
 
         <!– Seccion Seleccionar Opciones  –>
         <div class="right" id="right">
+        <a id="btn_logout" class="btn btn-secondary" href="logout.php" role="button">Cerrar Sesion</a>
                 <div class="right__title_change_format">
+                
                     <div class="right__title" id="spanTitle_format_autorizaciones"><span>Auto</span>rizaciones</div>                                <!-- Example single danger button -->
                     <div class="right__title" id="spanTitle_format_cotizaciones"><span>Coti</span>zaciones</div>                                <!-- Example single danger button -->
                     <div class="btn-group">

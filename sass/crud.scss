@@ -29,6 +29,17 @@ body {
   }
 }
 
+
+.bnt__add__logout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn_logout{
+  font-size: 20px;
+}
+
 #content__login {
   display: flex;
   align-items: center;
@@ -45,6 +56,7 @@ body {
 #content__img__login {
   width: 100%;
   text-align: center;
+ 
 }
 
 .content__form {
@@ -73,4 +85,10 @@ body {
   #btn_admin {
     font-size: 15px;
   }
+}
+.alert{
+display: none;
+position: absolute;
+top: 10em;
+width: 20%;
 }
