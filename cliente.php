@@ -420,9 +420,8 @@ if(!isset($rol)){
 
         <!– Seccion Seleccionar Opciones  –>
         <div class="right" id="right">
-        <a id="btn_logout" class="btn btn-secondary" href="logout.php" role="button">Cerrar Sesion</a>
+        <a id="btn_logout" class="btn btn-light btn-lg" href="logout.php" role="button" title="Cerrar sesion"><i class="fa-solid fa-right-from-bracket"></i></a>
                 <div class="right__title_change_format">
-                
                     <div class="right__title" id="spanTitle_format_autorizaciones"><span>Auto</span>rizaciones</div>                                <!-- Example single danger button -->
                     <div class="right__title" id="spanTitle_format_cotizaciones"><span>Coti</span>zaciones</div>                                <!-- Example single danger button -->
                     <div class="btn-group">

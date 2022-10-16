@@ -44,7 +44,7 @@ $resul = mysqli_query($connetion, $sql);
 ?>
 <br><br><div class="bnt__add__logout">
 <h1>Administrar Servicios</h1>
-<a id="btn_logout" class="btn btn-secondary" href="logoutAdmin.php" role="button">Cerrar Sesion</a>
+<a id="btn_logout" class="btnLogut" href="logoutAdmin.php" role="button"><img src="./icons/logout.png" alt="Cerrar sesion" title="Cerrar sesion"></a>
 </div><br><br>
 <a href="add.php" title="Agregar Servicio" class="btnAdd"><i class="fa-solid fa-circle-plus text-warning"></i></a><br><br>
 <table class="table table-hover table-bordered ">
