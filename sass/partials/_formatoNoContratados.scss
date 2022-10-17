@@ -190,7 +190,7 @@ $color-linea: #abb2b9;
             font-size: 20px;
             cursor: pointer;
             &:hover {
-              color: #1ABC9C;
+              color: #1abc9c;
             }
           }
         }
@@ -255,6 +255,10 @@ $color-linea: #abb2b9;
               }
             }
 
+            #servis {
+              display: none;
+            }
+
             .tableDescriptions__content__desc {
               //background-color: $left-color;
               width: 100%;
@@ -265,13 +269,14 @@ $color-linea: #abb2b9;
                 font-size: 9px;
               }
 
+              #inputCampos1,
               #inputCampos2,
               #inputCampos3,
               #inputCampos4 {
                 display: none;
               }
 
-              .deleteServis,
+              .deleteServis1,
               .deleteServis2,
               .deleteServis3,
               .deleteServis4 {
@@ -288,13 +293,14 @@ $color-linea: #abb2b9;
                 border-bottom: 1px solid $letra-black;
 
                 &:hover {
+                  #deleteServis1,
                   #deleteServis2,
                   #deleteServis3,
                   #deleteServis4 {
                     display: block;
                     font-size: 15px;
                     cursor: pointer;
-                    color: #F44336;
+                    color: #f44336;
                   }
                 }
 
@@ -305,7 +311,6 @@ $color-linea: #abb2b9;
                   display: flex;
                   justify-content: center;
                   align-items: center;
-
                 }
                 .content-descriptions {
                   height: 45px;

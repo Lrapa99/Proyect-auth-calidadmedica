@@ -28,7 +28,6 @@ if(!isset($rol)){
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./sass/styles.css">
     <link href="./sass/styles__print.css" rel="stylesheet" type="text/css" media="print" id="mediaPrint">
-
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -275,7 +274,9 @@ if(!isset($rol)){
                     <div class="selectServis__input">
                         <select id="selectServis" class="form-select form-select-sm" aria-label=".form-select-sm example">
                             <option selected>Seleccionar Servicio</option>
+
                           </select>
+
                     </div>
                     <div class="selectServis__option">
                         <i class="fa-solid fa-circle-plus" id="addServis" title="Agregar nuevo campo"></i>
@@ -284,6 +285,43 @@ if(!isset($rol)){
                 </div>
 
                 <!– fin selector de servicios –>
+
+                <?php 
+
+                            include('connetion.php');
+                            //seleccionar datos de la base de datos con SELECT * FROM servicios...
+                            $sql= 'SELECT * FROM servicios';
+                            $resul = mysqli_query($connetion, $sql);
+                            ?>
+                            <table class="table" id="servis">
+                            <thead class="table-primary">
+                            <tr>
+                            <th scope="col">Cups</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Valor</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+
+                            <?php 
+                            while($rows = mysqli_fetch_assoc($resul)){
+
+
+                            ?>
+                            <tr>
+                            <td><?php echo $rows['cups']?></td>
+                            <td class="val"><?php echo $rows['descripcion']?></td>
+                            <td><?php echo $rows['valor']?></td>
+                            </tr>
+
+
+                            <?php }?>
+                            </tbody>
+                            </table>
+
+                            <?php 
+                            mysqli_close($connetion);
+                            ?>
     
                 <div class="content__parte4">
                     <div class="content__parte4__tableDescriptions">
@@ -295,7 +333,7 @@ if(!isset($rol)){
                                 <div class="enca_valor">VALOR</div>     
                             </div>
                             <div class="tableDescriptions__content__desc">
-                                <div class="inputCampos1">
+                                <div class="inputCampos1" id="inputCampos1">
                                     <div class="content-cod_cums">
                                         <div id="cups" ></div>
                                     </div>
@@ -314,13 +352,14 @@ if(!isset($rol)){
                                     <div class="content-valor">
                                         <div id="valor"></div>
                                     </div>
+                                    <i class="fa-solid fa-trash deleteServis1" id="deleteServis1" title="Eliminar Campo"></i>
                                 </div>
                                 <div class="inputCampos2" id="inputCampos2">
                                     <div class="content-cod_cums">
                                         <div id="cups2" ></div>
                                     </div>
                                     <div class="content-descriptions">
-                                        <div id="servicio2"></div>
+                                        <div id="servicio2">hola</div>
                                     </div>
                                     <div class="content-cant">
                                         <input  type="text" class="form-control" id="cantidad2" placeholder="">
@@ -469,7 +508,7 @@ if(!isset($rol)){
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/6f4c79b44d.js" crossorigin="anonymous"></script>
-<script src="./js/app.js" ></script>
+<script src="./js/app.js"></script>
 <script src="./js/bd.js" ></script>
 </body>
 </html>

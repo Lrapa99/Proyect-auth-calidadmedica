@@ -485,7 +485,7 @@
   cursor: pointer;
 }
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .selectServis__content #addServis:hover {
-  color: #1ABC9C;
+  color: #1abc9c;
 }
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 {
   width: 90%;
@@ -540,6 +540,9 @@
   justify-content: center;
   align-items: center;
 }
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions #servis {
+  display: none;
+}
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc {
   width: 100%;
   height: 100%;
@@ -548,12 +551,13 @@
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc input {
   font-size: 9px;
 }
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc #inputCampos4 {
   display: none;
 }
-.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .deleteServis4 {
@@ -568,22 +572,26 @@
   align-items: center;
   border-bottom: 1px solid #212f3d;
 }
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos3:hover #deleteServis4,
+.padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis1,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis2,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis3,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos4:hover #deleteServis4 {
   display: block;
   font-size: 15px;
   cursor: pointer;
-  color: #F44336;
+  color: #f44336;
 }
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos1 .content-cod_cums,
 .padre .all-content .left__formatoNoContratados .left__formatoNoContratados__content .content__parte4 .content__parte4__tableDescriptions .tableDescriptions__content__desc .inputCampos2 .content-cod_cums,

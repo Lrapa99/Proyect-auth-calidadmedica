@@ -67,7 +67,7 @@ while($rows = mysqli_fetch_assoc($resul)){
 <tr>
   <th scope="row"><?php echo $rows['id']?></th>
   <td><?php echo $rows['cups']?></td>
-  <td><?php echo $rows['descripcion']?></td>
+  <td id="valDesc"><?php echo $rows['descripcion']?></td>
   <td>$<?php echo number_format($rows['valor'])?></td>
   <td class="acciones"><?php echo "<a class='btnActions' href='edit.php?id=".$rows['id']."' title='Editar'><i class='fa-solid fa-pen-to-square text-info'></i></a>";?><?php echo "<a class='btnActions' href='delete.php?id=".$rows['id']."' title='Eliminar' onclick='return confirmar()'><i class='fa-solid fa-trash text-danger'></i></a>";?> </td>
 </tr>

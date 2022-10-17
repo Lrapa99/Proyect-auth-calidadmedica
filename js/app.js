@@ -1,4 +1,6 @@
 $(document).ready(() => {
+
+  console.log('app.js "ok"');
   //api coosalud
   let m = [];
   const baseUrl =
@@ -178,11 +180,12 @@ const inputValorTotalNoContratados = $("#valorTotal");
 const right__hidden = $("#right")[0];
 
 //*funcion para asignar nombres a pdf
-const getNameDocument = () => {
+function getNameDocument(formato) {
   //asignar nombres a pdf impresos
   const namePrintMaxilodent = `AUTORIZACION_MAXILODENT_`;
   const namePrintRadiologia = `AUTORIZACION_RADIOLOGIA_`;
   const namePrintCastulo = `AUTORIZACION_CASTULO_`;
+  const namePrintCotizacion = `SOLICITUD_COTIZACION_`;
 
   const fechaDoc = new Date(); //instancia del objeto date
 
@@ -196,28 +199,37 @@ const getNameDocument = () => {
   };
 
   const { day, month, year } = objFechaDocument; //extraemos los datos del objeto
-  $("#fechaNoContratados").text(` ${day} ${month}${year}`);
+  //$("#fechaNoContratados").text(` ${day} ${month}${year}`);
 
   const result = []; //creamos un array vacio, para almacenar el valor final
 
-  if (checkMaxilodent[0].checked) {
+  if(formato === 'coti'){
     result.push(
-      `${namePrintMaxilodent}${inputDocumento.value}_${month}_${day}_${year}`
+      `${namePrintCotizacion}${inputDocumentoNoContratados.value}_${month}_${day}_${year}`
     );
   }
-  if (checkRadiologia[0].checked) {
-    result.push(
-      `${namePrintRadiologia}${inputDocumento.value}_${month}_${day}_${year}`
-    );
-  }
-  if (checkCastulo[0].checked) {
-    result.push(
-      `${namePrintCastulo}${inputDocumento.value}_${month}_${day}_${year}`
-    );
+ 
+  if(formato === 'auth'){
+    if (checkMaxilodent[0].checked) {
+      result.push(
+        `${namePrintMaxilodent}${inputDocumento.value}_${month}_${day}_${year}`
+      );
+    }
+    if (checkRadiologia[0].checked) {
+      result.push(
+        `${namePrintRadiologia}${inputDocumento.value}_${month}_${day}_${year}`
+      );
+    }
+    if (checkCastulo[0].checked) {
+      result.push(
+        `${namePrintCastulo}${inputDocumento.value}_${month}_${day}_${year}`
+      );
+    }
   }
 
   return result[0];
 };
+
 
 //console.log(getNameDocument());
 
@@ -325,6 +337,7 @@ btnPrint.click(() => {
   }
 });
 
+
 //console.log($("#PrintBody")[0]);
 
 $("#modalAceptPrint").click(() => {
@@ -345,14 +358,14 @@ $("#modalAceptPrint").click(() => {
     //console.log(newValorCopago);
   }
 
-  if (checkRadiologia[0].checked) {
-    document.title = getNameDocument();
-  }
-  if (checkMaxilodent[0].checked) {
-    document.title = getNameDocument();
-  }
-  if (checkCastulo[0].checked) {
-    document.title = getNameDocument();
+  let cadena1 = $("#servicio").text()
+
+  const test = Boolean(cadena1)
+
+  if(test){
+    document.title = getNameDocument('coti');
+  }else{
+    document.title = getNameDocument('auth');
   }
 
   if (inputServicios2.value == "" || inputServicios3.value == "") {
@@ -430,8 +443,8 @@ const valuesClear = {
   4: inputServicios2,
   5: inputServicios3,
   6: inputCopago,
-  7: inputNombresNoContratados,
-  8: inputDocumentoNoContratados,
+  7: inputDocumentoNoContratados,
+  8: inputNombresNoContratados
 };
 
 //funcion para limpiar solo los campos servicios
@@ -661,7 +674,7 @@ btnCotizaciones.click(() => {
           $("#alerts").fadeOut(1000, function () {
             $(this).html("");
           });
-
+          
           showModal(
             "Desea guardar los datos e imprimir?",
             "./img/save.svg",
