@@ -43,7 +43,7 @@ if (isset($_SESSION['rol'])) {
       </div>
       <div class="container-fluid content__form">
         <form action="validarAdmin.php" method="post" id="form__login">
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger animate__animated animate__shakeY" role="alert">
         Error de Autenticacion!
         </div>
           <h3 class="animate__animated animate__backInLeft">Iniciar Sesion</h3>
