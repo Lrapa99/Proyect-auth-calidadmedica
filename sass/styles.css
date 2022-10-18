@@ -355,7 +355,7 @@
 }
 .padre .all-content .left__formatoNoContratados::before {
   content: "";
-  background-image: url("/img/fondoLogo.jpg");
+  background-image: url("../IMG/fondoLogo.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;

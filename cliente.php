@@ -66,7 +66,7 @@ if(!isset($rol)){
 
    <div class="padre animate__animated animate__zoomInDown">
     <span id="alerts"></span>
-    <div class="all-content shadow-lg p-3 mb-5 bg-body rounded">
+    <div id="all-content" class="all-content shadow-lg p-3 mb-5 bg-body rounded">
 
 
         <!– Seccion Formato De Autorizaciones –>

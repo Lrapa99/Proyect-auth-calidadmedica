@@ -338,6 +338,16 @@ btnPrint.click(() => {
 //console.log($("#PrintBody")[0]);
 
 $("#modalAceptPrint").click(() => {
+  //*funcion para quitar sombras al imprimir:
+
+  function hideShadow() {
+    $("#all-content").removeClass("shadow-lg p-3 mb-5");
+  }
+
+  function showShadow() {
+    $("#all-content").addClass("shadow-lg p-3 mb-5");
+  }
+
   $("#exampleModal").removeClass("fade");
   //console.log("aceptado!!!");
 
@@ -376,12 +386,14 @@ $("#modalAceptPrint").click(() => {
 
   function showImpr() {
     setTimeout(function () {
+      hideShadow();
       window.print();
     }, 200);
   }
 
   function appConfigPrint() {
     setTimeout(function () {
+      showShadow();
       document.title = "Authorizacions";
       right__hidden.className = "right";
       inputServicios2.placeholder = "Servicios";
