@@ -118,14 +118,36 @@ $(document).ready(() => {
       } else {
         clearInputs();
       }
+      //*funcion para ocultar y mostrar nota de medio de contraste:
+      function hiddenNotaContrate() {
+        let cadena1 = $("#servicio").text(),
+          cadena2 = $("#servicio2").text(),
+          cadena3 = $("#servicio3").text(),
+          cadena4 = $("#servicio4").text();
 
-      hiddenNotaContraste();
+        //console.log(cadena1, cadena2, cadena3, cadena4);
+        let espression = /CONTRASTE/; //?espresion regular, para buscar texto
+
+        let index1 = cadena1.search(espression),
+          index2 = cadena2.search(espression),
+          index3 = cadena3.search(espression),
+          index4 = cadena4.search(espression);
+
+        if (index1 >= 0 || index2 >= 0 || index3 >= 0 || index4 >= 0) {
+          // console.log("contraste encontrado");
+          $(".content__parte5_notaMedioDeContraste").css("display", "block");
+        } else {
+          //console.log("contraste no encontrado");
+          $(".content__parte5_notaMedioDeContraste").css("display", "none");
+        }
+      }
+
+      hiddenNotaContrate();
     });
 
     //*funcion para detectar cambios en las cantidades y sumar los valores:
-
+    let iniCant = $("#cantidad").val();
     $("#cantidad").change(function () {
-      let iniCant = $("#cantidad").val();
       if ($("#cantidad").val() !== iniCant) {
         for (let servis of tbl) {
           //console.log(val);
@@ -142,9 +164,8 @@ $(document).ready(() => {
         }
       }
     });
-
+    let iniCant2 = $("#cantidad2").val();
     $("#cantidad2").change(function () {
-      let iniCant2 = $("#cantidad2").val();
       if ($("#cantidad2").val() !== iniCant2) {
         for (let servis of tbl) {
           //console.log(val);
@@ -161,9 +182,8 @@ $(document).ready(() => {
         }
       }
     });
-
+    let iniCant3 = $("#cantidad3").val();
     $("#cantidad3").change(function () {
-      let iniCant3 = $("#cantidad3").val();
       if ($("#cantidad3").val() !== iniCant3) {
         for (let servis of tbl) {
           //console.log(val);
@@ -180,9 +200,8 @@ $(document).ready(() => {
         }
       }
     });
-
+    let iniCant4 = $("#cantidad4").val();
     $("#cantidad4").change(function () {
-      let iniCant4 = $("#cantidad4").val();
       if ($("#cantidad4").val() !== iniCant4) {
         for (let servis of tbl) {
           //console.log(val);
