@@ -48,6 +48,20 @@ $(document).ready(() => {
     $("#valorTotal").text("$ 0");
   }
 
+  //*funcion para obtener el valor total de todos los campos:
+  function getValorTotal() {
+    let valor1 = $("#valor").text().replace(/[$,]+/g, ""),
+      valor2 = $("#valor2").text().replace(/[$,]+/g, ""),
+      valor3 = $("#valor3").text().replace(/[$,]+/g, ""),
+      valor4 = $("#valor4").text().replace(/[$,]+/g, "");
+
+    let totalsum =
+      Number(valor1) + Number(valor2) + Number(valor3) + Number(valor4);
+
+    let newValorTotal = new Intl.NumberFormat("es-419").format(totalsum);
+    $("#valorTotal").text(`$ ${newValorTotal}`);
+  }
+
   //*funcion para obtener los valores del select, y asignarlos en los campos:
 
   const getValuesInputs = () => {
@@ -60,7 +74,20 @@ $(document).ready(() => {
             var valor = servis["Valor"];
             let cups = servis["Cups"];
 
-            $(".inputCampos1").attr("id", "");
+            if ($("#selectServis").val() !== "") {
+              $(".inputCampos1").attr("id", "");
+              $(".deleteServis1").click(() => {
+                $("#cups").text("");
+                $("#servicio").text("");
+                $("#valor").text("");
+                $("#cantidad").val("");
+                $(".inputCampos1").attr("id", "inputCampos1");
+                hiddenNotaContrate();
+                $("#selectServis").val("Seleccionar Servicio");
+                getValorTotal();
+              });
+            }
+
             if ($("#cups").text() === "") {
               var newValorServicio1 = new Intl.NumberFormat("es-419").format(
                 valor
@@ -70,8 +97,9 @@ $(document).ready(() => {
               $("#valor").text(`$ ${newValorServicio1}`);
               $("#cantidad").val(1);
 
-              //$("#valorTotal").text(`$ ${newValorServicio1}`);
+              //$("#valorTotal").text(`$ ${newValorServicio3}`);
             }
+
             if ($(".inputCampos2").attr("id") !== "inputCampos2") {
               var newValorServicio2 = new Intl.NumberFormat("es-419").format(
                 valor
@@ -112,6 +140,7 @@ $(document).ready(() => {
               }
             }
 
+            getValorTotal();
             //$("#selectServis").val('')
           }
         }
@@ -154,16 +183,19 @@ $(document).ready(() => {
 
           if ($("#cups").text() == servis["Cups"]) {
             let valor = servis["Valor"];
-            let newValorServicio = new Intl.NumberFormat("es-419").format(
+            var newValorServicio = new Intl.NumberFormat("es-419").format(
               valor * $("#cantidad").val()
             );
             $("#valor").text(`$ ${newValorServicio}`);
+
+            getValorTotal();
 
             //$("#valorTotal").text(`$ ${newValorServicio}`);
           }
         }
       }
     });
+
     let iniCant2 = $("#cantidad2").val();
     $("#cantidad2").change(function () {
       if ($("#cantidad2").val() !== iniCant2) {
@@ -177,6 +209,7 @@ $(document).ready(() => {
             );
             $("#valor2").text(`$ ${newValorServicio}`);
 
+            getValorTotal();
             //$("#valorTotal").text(`$ ${newValorServicio}`);
           }
         }
@@ -195,6 +228,7 @@ $(document).ready(() => {
             );
             $("#valor3").text(`$ ${newValorServicio}`);
 
+            getValorTotal();
             //$("#valorTotal").text(`$ ${newValorServicio}`);
           }
         }
@@ -213,6 +247,7 @@ $(document).ready(() => {
             );
             $("#valor4").text(`$ ${newValorServicio}`);
 
+            getValorTotal();
             //$("#valorTotal").text(`$ ${newValorServicio}`);
           }
         }
@@ -261,6 +296,7 @@ $(document).ready(() => {
         $(".inputCampos1").attr("id", "inputCampos1");
         hiddenNotaContrate();
         $("#selectServis").val("Seleccionar Servicio");
+        getValorTotal();
       });
     }
 
@@ -292,6 +328,8 @@ $(document).ready(() => {
           $(`#cantidad${inputCamp}`).val(""); //*limpiar datos cantidad
           $(`.inputCampos${inputCamp}`).attr("id", `inputCampos${inputCamp}`); //*ocultar campo actual
           hiddenNotaContrate(); //* ejecutar funcion para mostrar o no nota medio de contraste
+          $("#selectServis").val("Seleccionar Servicio"); //*limpiar valor selecionado en el select
+          getValorTotal(); //*actualizar el valor total al eliminar un campo
         });
       }
     }

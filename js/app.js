@@ -464,6 +464,7 @@ function clearCampos() {
     $(`#cantidad${i}`).val("");
     $(`.inputCampos${i}`).attr("id", `inputCampos${i}`);
   }
+  $('.inputCampos1').attr("id", 'inputCampos1');
   $("#valorTotal").text("$ 0");
   $("#selectServis").val("Seleccionar Servicio");
 }
