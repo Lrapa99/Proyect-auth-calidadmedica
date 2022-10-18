@@ -1,5 +1,4 @@
 $(document).ready(() => {
-
   console.log('app.js "ok"');
   //api coosalud
   let m = [];
@@ -203,13 +202,13 @@ function getNameDocument(formato) {
 
   const result = []; //creamos un array vacio, para almacenar el valor final
 
-  if(formato === 'coti'){
+  if (formato === "coti") {
     result.push(
       `${namePrintCotizacion}${inputDocumentoNoContratados.value}_${month}_${day}_${year}`
     );
   }
- 
-  if(formato === 'auth'){
+
+  if (formato === "auth") {
     if (checkMaxilodent[0].checked) {
       result.push(
         `${namePrintMaxilodent}${inputDocumento.value}_${month}_${day}_${year}`
@@ -228,8 +227,7 @@ function getNameDocument(formato) {
   }
 
   return result[0];
-};
-
+}
 
 //console.log(getNameDocument());
 
@@ -337,7 +335,6 @@ btnPrint.click(() => {
   }
 });
 
-
 //console.log($("#PrintBody")[0]);
 
 $("#modalAceptPrint").click(() => {
@@ -358,14 +355,14 @@ $("#modalAceptPrint").click(() => {
     //console.log(newValorCopago);
   }
 
-  let cadena1 = $("#servicio").text()
+  let cadena1 = $("#servicio").text();
 
-  const test = Boolean(cadena1)
+  const test = Boolean(cadena1);
 
-  if(test){
-    document.title = getNameDocument('coti');
-  }else{
-    document.title = getNameDocument('auth');
+  if (test) {
+    document.title = getNameDocument("coti");
+  } else {
+    document.title = getNameDocument("auth");
   }
 
   if (inputServicios2.value == "" || inputServicios3.value == "") {
@@ -444,7 +441,7 @@ const valuesClear = {
   5: inputServicios3,
   6: inputCopago,
   7: inputDocumentoNoContratados,
-  8: inputNombresNoContratados
+  8: inputNombresNoContratados,
 };
 
 //funcion para limpiar solo los campos servicios
@@ -464,7 +461,7 @@ function clearCampos() {
     $(`#cantidad${i}`).val("");
     $(`.inputCampos${i}`).attr("id", `inputCampos${i}`);
   }
-  $('.inputCampos1').attr("id", 'inputCampos1');
+  $(".inputCampos1").attr("id", "inputCampos1");
   $("#valorTotal").text("$ 0");
   $("#selectServis").val("Seleccionar Servicio");
 }
@@ -675,7 +672,7 @@ btnCotizaciones.click(() => {
           $("#alerts").fadeOut(1000, function () {
             $(this).html("");
           });
-          
+
           showModal(
             "Desea guardar los datos e imprimir?",
             "./img/save.svg",
