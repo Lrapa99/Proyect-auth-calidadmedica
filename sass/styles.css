@@ -863,6 +863,9 @@ body {
 .padre .all-content .left .formato__bloque3 .bloque3__parte2 .bloque3__parte2__input__documento {
   display: flex;
 }
+.padre .all-content .left .formato__bloque3 .bloque3__parte2 .bloque3__parte2__input__documento #tipoDoc {
+  margin: 6px 1px 0px 0px;
+}
 .padre .all-content .left .formato__bloque3 .bloque3__parte2 .bloque3__parte2__input__estudio {
   margin-bottom: 10px;
 }

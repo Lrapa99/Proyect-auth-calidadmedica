@@ -28,7 +28,11 @@ $(document).ready(() => {
       const nameComplet = `${primerNombre} ${segundoNombre} ${primerApellido} ${segundoApellido}`;
       const estadoUs = response.estado == "AC" ? "ACTIVO" : "INACTIVO";
 
+      const tipoDoc = response.tipo_identificacion;
+
       $(`#${nameID}`).val(nameComplet);
+
+      $('#tipoDoc').text(`${tipoDoc}:`);
 
       //console.log(estadoUs);
 
@@ -103,7 +107,7 @@ $(document).ready(() => {
   </div>`;
 
     let largo = $("#documento").val().length;
-
+    $('#tipoDoc').text('')
     if (largo > 6) {
       $("#nombres").val("");
       $("#estado").html(spinner);
@@ -356,14 +360,14 @@ $("#modalAceptPrint").click(() => {
   right__hidden.className = "right__print";
 
   //Valor copago, formato de comas por cada 1000
-  if (inputCopago.value !== "") {
-    let copagoValue = inputCopago.value;
-    let newValorCopago = new Intl.NumberFormat("es-419").format(copagoValue);
+  // if (inputCopago.value !== "") {
+  //   let copagoValue = inputCopago.value;
+  //   let newValorCopago = new Intl.NumberFormat("es-419").format(copagoValue);
 
-    $("#copago").val(newValorCopago);
+  //   $("#copago").val(newValorCopago);
 
-    //console.log(newValorCopago);
-  }
+  //   //console.log(newValorCopago);
+  // }
 
   let cadena1 = $("#servicio").text();
 
@@ -490,6 +494,7 @@ const clearAll = (obj) => {
   inputServiciosNoContratados.text("");
   inputCantidadNoContratados.val("");
   inputValorNoContratados.text("");
+  $('#tipoDoc').text('')
   clearCampos();
 };
 
