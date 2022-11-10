@@ -56,6 +56,16 @@
           .bloque2__parte3 {
             height: 80%;
             text-align: center;
+            .namePrint{
+              display: flex;
+              align-items: center;
+              #namePrint{
+                font-size: 12px;
+                border: none;
+                width: 100px;
+              }
+            }
+           
           }
         }
 

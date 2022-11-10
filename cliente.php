@@ -109,7 +109,11 @@ if(!isset($rol)){
                         <div class="icon__date"><i class="fa-solid fa-calendar-days"></i><span> FECHA/AÑO</span></div>
                         <div class="bloque2__parte3__fecha">
                             <span id="fechaActual"></span>
-                                </div>
+                        </div>
+                        <div class="namePrint">
+                            <label for="namePrint">Impreso por:</label>
+                            <input  type="text" class="form-control"  id="namePrint" placeholder="">
+                        </div>
                         <div class="bloque2__parte3__autorizacion">
                             <i class="fa-solid fa-circle-check"></i><span> AUTORIZACION: </span>
                             <span>2000168</span>
@@ -185,14 +189,14 @@ if(!isset($rol)){
                     <div class="bloque4__parte3">
                         <div class="d"><span>V.º B.º</span></div>
                         <div class="bloque4__parte3__firma">
-                                <img src="./img/firma.png" height="40" alt="" id="firma">
-                                <img src="./img/firmaLogo.png" height="40" alt="" id="firmaLogo">
+                                <img src="./img/FIRMA RUBALDO 2022.png" height="70" alt="" id="firma">
+                                <img src="./img/firmaLogo.png" alt="" id="firmaLogo">
                         </div>
                     </div>
                     <div class="bloque4__parte4">
                         <span>AUTORIZADO POR:</span>
                         <div class="bloque4__parte4__quien-autoriza">
-                            <span>EDWIN GONZALEZ</span>
+                            <span>RUBALDO ROMERO HERRERA</span>
                         </div>
                     </div>
                 </div>
@@ -441,9 +445,9 @@ if(!isset($rol)){
                             <span>Cordialmente, </span>
                         </div>
                         <div class="parte6__firmas">
-                            <div><span>EDWIN GONZALEZ GALLEGO<br>
+                            <div><span>RUBALDO ROMERO HERRARA<br>
                                 FACTURACION</span></div>
-                            <div><img src="./img/firma.png" height="40" alt="" id="firma"></div>
+                            <div><img src="./img/FIRMA RUBALDO 2022.png" alt="" id="firma"></div>
                         </div>
                         <div class="parte6__infoFooter">
                             <span>Calle 18#12-83 SEDE PRINCIPAL</span>

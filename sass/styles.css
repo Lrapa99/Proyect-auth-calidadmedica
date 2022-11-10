@@ -677,7 +677,7 @@
   flex-direction: column;
 }
 .padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc .parte6__firmas img {
-  width: 90px;
+  width: 20%;
 }
 .padre .all-content .left__formatoNoContratados .content__parte6 .content__parte6__desc .parte6__infoFooter {
   display: flex;
@@ -930,6 +930,11 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.padre .all-content .left .formato__bloque4 .bloque4__parte3 .bloque4__parte3__firma #firmaLogo {
+  width: 20%;
+  height: 20%;
+  margin-top: 15px;
 }
 .padre .all-content .left .formato__bloque4 .bloque4__parte4 {
   color: #212f3d;

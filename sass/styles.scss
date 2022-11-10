@@ -147,6 +147,7 @@ body {
         }
 
         .bloque2__parte3 {
+          //background-color: #16a085;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -155,6 +156,10 @@ body {
           height: 170px;
           span {
             font-weight: 500;
+          }
+          .namePrint {
+            #namePrint {
+            }
           }
         }
       }
@@ -184,9 +189,9 @@ body {
 
           .bloque3__parte2__input__documento {
             display: flex;
-           #tipoDoc{
-            margin: 6px 1px 0px 0px;
-           }
+            #tipoDoc {
+              margin: 6px 1px 0px 0px;
+            }
           }
 
           .bloque3__parte2__input__estudio {
@@ -263,6 +268,11 @@ body {
             display: flex;
             justify-content: space-around;
             width: 100%;
+            #firmaLogo {
+              width: 20%;
+              height: 20%;
+              margin-top: 15px;
+            }
           }
         }
 
